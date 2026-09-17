@@ -8,7 +8,7 @@ The pattern is the same each time: make the failure happen reliably, find out wh
 
 ## 1. versitygw — an S3 bucket answered with an empty `<Rule/>`
 
-**[versity/versitygw#2399](https://github.com/versity/versitygw/pull/2399)** · merged · Go · ★ 3k · `+126 / −6`
+**[versity/versitygw#2399](https://github.com/versity/versitygw/pull/2399)** · merged · Go · [<img src="https://img.shields.io/github/stars/versity/versitygw?style=flat-square&label=%E2%98%85&color=0969da" alt="versitygw stars" height="18">](https://github.com/versity/versitygw) · `+126 / −6`
 
 **Symptom.** `GET /<bucket>?object-lock` on a bucket that had object lock enabled but no default retention returned:
 
@@ -31,7 +31,7 @@ AWS omits `<Rule>` entirely in that case, and clients validating against the S3 
 
 ## 2. jc — `http-headers` crashed on a whitespace-only line
 
-**[kellyjonbrazil/jc#753](https://github.com/kellyjonbrazil/jc/pull/753)** · merged · Python · ★ 8.7k · `+35 / −1`
+**[kellyjonbrazil/jc#753](https://github.com/kellyjonbrazil/jc/pull/753)** · merged · Python · [<img src="https://img.shields.io/github/stars/kellyjonbrazil/jc?style=flat-square&label=%E2%98%85&color=0969da" alt="jc stars" height="18">](https://github.com/kellyjonbrazil/jc) · `+35 / −1`
 
 **Symptom.** Parsing input with a line containing only spaces raised `IndexError` in `http_headers`. `curl_head` reached the same code through `http_headers.parse`, so both entry points were affected.
 
@@ -45,7 +45,7 @@ AWS omits `<Rule>` entirely in that case, and clients validating against the S3 
 
 ## 3. django-ninja — async authentication callbacks ran twice
 
-**[vitalik/django-ninja#1755](https://github.com/vitalik/django-ninja/pull/1755)** · merged · Python · ★ 9.2k · `+31 / −1`
+**[vitalik/django-ninja#1755](https://github.com/vitalik/django-ninja/pull/1755)** · merged · Python · [<img src="https://img.shields.io/github/stars/vitalik/django-ninja?style=flat-square&label=%E2%98%85&color=0969da" alt="django-ninja stars" height="18">](https://github.com/vitalik/django-ninja) · `+31 / −1`
 
 **Symptom.** An async-marked authentication callback on a synchronous endpoint executed twice, and the run emitted both an un-awaited coroutine warning and an `async_to_sync` warning. Duplicated synchronous work inside `__call__` is the visible damage; the warnings are the clue.
 
